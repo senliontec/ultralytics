@@ -1,6 +1,6 @@
 # Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 
-from __future__ import annotations
+from __future__ import annotations  # 允许使用前向引用类型注解
 
 import math
 import random
@@ -22,7 +22,9 @@ from ultralytics.utils.torch_utils import torch_distributed_zero_first, unwrap_m
 
 
 class DetectionTrainer(BaseTrainer):
-    """A class extending the BaseTrainer class for training based on a detection model.
+    """
+    检测模型的训练
+    A class extending the BaseTrainer class for training based on a detection model.
 
     This trainer specializes in object detection tasks, handling the specific requirements for training YOLO models for
     object detection including dataset building, data loading, preprocessing, and model configuration.
@@ -120,9 +122,9 @@ class DetectionTrainer(BaseTrainer):
         if self.args.multi_scale:
             imgs = batch["img"]
             sz = (
-                random.randrange(int(self.args.imgsz * 0.5), int(self.args.imgsz * 1.5 + self.stride))
-                // self.stride
-                * self.stride
+                    random.randrange(int(self.args.imgsz * 0.5), int(self.args.imgsz * 1.5 + self.stride))
+                    // self.stride
+                    * self.stride
             )  # size
             sf = sz / max(imgs.shape[2:])  # scale factor
             if sf != 1:
