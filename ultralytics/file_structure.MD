@@ -43,7 +43,7 @@
 │   │   └── xView.yaml
 │   ├── default.yaml
 │   ├── __init__.py
-│   ├── models
+│   ├── models 模型架构配置文件
 │   │   ├── 11
 │   │   │   ├── yolo11-cls-resnet18.yaml
 │   │   │   ├── yolo11-cls.yaml
@@ -109,10 +109,10 @@
 │   │       ├── yolov9m.yaml
 │   │       ├── yolov9s.yaml
 │   │       └── yolov9t.yaml
-│   └── trackers
+│   └── trackers 跟踪器配置文件
 │       ├── botsort.yaml
 │       └── bytetrack.yaml
-├── data
+├── data 数据加载和处理模块
 │   ├── annotator.py
 │   ├── augment.py
 │   ├── base.py
@@ -129,7 +129,7 @@
 │   ├── split_dota.py
 │   ├── split.py
 │   └── utils.py
-├── engine
+├── engine 核心引擎模块
 │   ├── exporter.py
 │   ├── __init__.py
 │   ├── model.py
@@ -146,7 +146,7 @@
 │   ├── session.py
 │   └── utils.py
 ├── __init__.py
-├── models
+├── models 模型实现模块
 │   ├── fastsam
 │   │   ├── __init__.py
 │   │   ├── model.py
