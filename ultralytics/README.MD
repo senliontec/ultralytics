@@ -1,4 +1,5 @@
 tree -d -A -L 5
+```plaintext
 .
 ├── assets 示例图片资源
 ├── cfg 配置文件目录
@@ -43,3 +44,5 @@ tree -d -A -L 5
 └── utils 工具函数
     ├── callbacks
     └── export
+
+```
